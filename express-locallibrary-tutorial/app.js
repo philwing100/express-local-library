@@ -6,7 +6,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const connectToDb = require('./mongooser');
+const mongooser = require('./mongooser');
 
 const app = express();
 
@@ -39,6 +39,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-connectToDb();
+mongooser.connectToDb();
+//mongooser.printAllData();
 
 module.exports = app;
