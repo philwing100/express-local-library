@@ -35,6 +35,7 @@ async function createSchema() {
 
     // Compile model from schema
     const SomeModel = mongoose.model("SomeModel", SomeModelSchema);
+
 }
 
 async function printAllData() {
@@ -60,7 +61,6 @@ async function printAllData() {
         // await mongoose.connection.close();
     }
 }
-
 module.exports = {
     connectToDb,
     printAllData
