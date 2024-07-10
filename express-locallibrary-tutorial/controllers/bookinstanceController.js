@@ -1,46 +1,42 @@
-const Book = require("../models/book");
+const BookInstance = require("../models/bookinstance");
 const asyncHandler = require("express-async-handler");
 
-exports.index = asyncHandler(async (req, res, next) => {
-  res.send("NOT IMPLEMENTED: Site Home Page");
+// Display list of all BookInstances.
+exports.bookinstance_list = asyncHandler(async (req, res, next) => {
+  res.send("NOT IMPLEMENTED: BookInstance list");
 });
 
-// Display list of all books.
-exports.book_list = asyncHandler(async (req, res, next) => {
-  res.send("NOT IMPLEMENTED: Book list");
+// Display detail page for a specific BookInstance.
+exports.bookinstance_detail = asyncHandler(async (req, res, next) => {
+  res.send(`NOT IMPLEMENTED: BookInstance detail: ${req.params.id}`);
 });
 
-// Display detail page for a specific book.
-exports.book_detail = asyncHandler(async (req, res, next) => {
-  res.send(`NOT IMPLEMENTED: Book detail: ${req.params.id}`);
+// Display BookInstance create form on GET.
+exports.bookinstance_create_get = asyncHandler(async (req, res, next) => {
+  res.send("NOT IMPLEMENTED: BookInstance create GET");
 });
 
-// Display book create form on GET.
-exports.book_create_get = asyncHandler(async (req, res, next) => {
-  res.send("NOT IMPLEMENTED: Book create GET");
+// Handle BookInstance create on POST.
+exports.bookinstance_create_post = asyncHandler(async (req, res, next) => {
+  res.send("NOT IMPLEMENTED: BookInstance create POST");
 });
 
-// Handle book create on POST.
-exports.book_create_post = asyncHandler(async (req, res, next) => {
-  res.send("NOT IMPLEMENTED: Book create POST");
+// Display BookInstance delete form on GET.
+exports.bookinstance_delete_get = asyncHandler(async (req, res, next) => {
+  res.send("NOT IMPLEMENTED: BookInstance delete GET");
 });
 
-// Display book delete form on GET.
-exports.book_delete_get = asyncHandler(async (req, res, next) => {
-  res.send("NOT IMPLEMENTED: Book delete GET");
+// Handle BookInstance delete on POST.
+exports.bookinstance_delete_post = asyncHandler(async (req, res, next) => {
+  res.send("NOT IMPLEMENTED: BookInstance delete POST");
 });
 
-// Handle book delete on POST.
-exports.book_delete_post = asyncHandler(async (req, res, next) => {
-  res.send("NOT IMPLEMENTED: Book delete POST");
+// Display BookInstance update form on GET.
+exports.bookinstance_update_get = asyncHandler(async (req, res, next) => {
+  res.send("NOT IMPLEMENTED: BookInstance update GET");
 });
 
-// Display book update form on GET.
-exports.book_update_get = asyncHandler(async (req, res, next) => {
-  res.send("NOT IMPLEMENTED: Book update GET");
-});
-
-// Handle book update on POST.
-exports.book_update_post = asyncHandler(async (req, res, next) => {
-  res.send("NOT IMPLEMENTED: Book update POST");
+// Handle bookinstance update on POST.
+exports.bookinstance_update_post = asyncHandler(async (req, res, next) => {
+  res.send("NOT IMPLEMENTED: BookInstance update POST");
 });
