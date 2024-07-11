@@ -3,7 +3,7 @@
 console.log(
     'This script populates some test books, authors, genres and bookinstances to your database. Specified database as argument - e.g.: '+
     'node populatedb "mongodb+srv://cooluser:coolpassword@cluster0.lz91hw2.mongodb.net/local_library?retryWrites=true&w=majority"'
-    //                mongodb+srv://philwing100:TkDBUq99aDoh7oh0@cluster0.iqoodpk.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0
+
   );
   
   // Get arguments passed on command line
